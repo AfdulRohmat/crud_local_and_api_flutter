@@ -56,7 +56,7 @@ class _CustomFormFieldState extends State<CustomFormField> {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: const BorderRadius.all(
-              Radius.circular(16.0),
+              Radius.circular(8.0),
             ),
             borderSide: BorderSide(
               width: 1,
@@ -66,7 +66,7 @@ class _CustomFormFieldState extends State<CustomFormField> {
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: const BorderRadius.all(
-              Radius.circular(16.0),
+              Radius.circular(8.0),
             ),
             borderSide: BorderSide(
               width: 1,

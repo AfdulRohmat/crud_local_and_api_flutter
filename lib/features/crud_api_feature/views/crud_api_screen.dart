@@ -19,7 +19,7 @@ class CrudApiScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(50),
         child: CustomAppBar(
-          title: "CRUD API",
+          title: "DATA FROM API",
           titleColor: CrudCustomColors.darkGreenMain,
           onLeadingTap: () {
             Get.back();

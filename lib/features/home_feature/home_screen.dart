@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:produc_crud_app/features/crud_api_feature/views/crud_api_screen.dart';
+import 'package:produc_crud_app/features/crud_local_feature/views/crud_local_screens.dart';
 import 'package:produc_crud_app/res/colors/crud_custom_colors.dart';
 import 'package:produc_crud_app/utils/widgets/custom_appbar.dart';
 
@@ -32,7 +33,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Card(
               child: ListTile(
-                onTap: () {},
+                onTap: () => Get.to(() => CrudLocalScreen()),
                 title: Text(
                   "CRUD with local database",
                   textAlign: TextAlign.center,
@@ -50,9 +51,9 @@ class HomeScreen extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                onTap: () => Get.to(() =>  CrudApiScreen()),
+                onTap: () => Get.to(() => CrudApiScreen()),
                 title: Text(
-                  "CRUD with network API",
+                  "Load Data From API",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.manrope(
                     color: CrudCustomColors.blackMain,
