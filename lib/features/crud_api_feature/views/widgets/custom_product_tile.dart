@@ -13,21 +13,23 @@ class CustomProductTile extends StatelessWidget {
     required this.rate,
     required this.cart,
     required this.imgUrl,
+    required this.onTileTap,
     Key? key,
   }) : super(key: key);
 
-  String title;
-  String price;
-  String category;
-  String desc;
-  String rate;
-  String cart;
-  String imgUrl;
+  final String title;
+  final String price;
+  final String category;
+  final String desc;
+  final String rate;
+  final String cart;
+  final String imgUrl;
+final  Function onTileTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => onTileTap(),
       child: Card(
         elevation: 2,
         child: Container(

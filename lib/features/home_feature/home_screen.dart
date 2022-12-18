@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:produc_crud_app/features/crud_api_feature/views/crud_api_screen.dart';
 import 'package:produc_crud_app/features/crud_local_feature/views/crud_local_screens.dart';
+import 'package:produc_crud_app/features/employe_feature/view/employe_screen.dart';
 import 'package:produc_crud_app/res/colors/crud_custom_colors.dart';
 import 'package:produc_crud_app/utils/widgets/custom_appbar.dart';
 
@@ -54,6 +55,24 @@ class HomeScreen extends StatelessWidget {
                 onTap: () => Get.to(() => CrudApiScreen()),
                 title: Text(
                   "Load Data From API",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.manrope(
+                    color: CrudCustomColors.blackMain,
+                    fontSize: 16,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+                trailing: const Icon(
+                  Icons.arrow_forward_ios,
+                  size: 20,
+                ),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                onTap: () => Get.to(() => const EmployeScreen()),
+                title: Text(
+                  "Local JSON Employee Payroll",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.manrope(
                     color: CrudCustomColors.blackMain,

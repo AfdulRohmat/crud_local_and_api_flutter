@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:produc_crud_app/features/crud_api_feature/view_model/crud_api_view_model.dart';
+import 'package:produc_crud_app/features/crud_api_feature/views/detail_product_screen.dart';
 import 'package:produc_crud_app/features/crud_api_feature/views/widgets/custom_product_tile.dart';
 import 'package:produc_crud_app/res/colors/crud_custom_colors.dart';
 import 'package:produc_crud_app/utils/widgets/custom_appbar.dart';
@@ -57,6 +58,7 @@ class CrudApiScreen extends StatelessWidget {
                         rate: dataPerItem.rating.rate.toString(),
                         cart: dataPerItem.rating.count.toString(),
                         imgUrl: dataPerItem.image,
+                        onTileTap: () {},
                       );
                     },
                     itemCount: crudApiViewModel.listProduct.length,

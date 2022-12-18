@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "Ilham Udin",
+        "country" : "Indonesia",
+        "base_salary" : 30000000,
+        "status" : {
+            "marital_status" : "K1",
+            "ptkp" : 75000000
+        },
+       "annual_tax_total" : 37750000,
+        "insurance": null 
+    },
+    
+    {
+        "name" : "Nguyen Vatcong",
+        "country" : "Vietnam",
+        "base_salary" : 30000000,
+        "status" : {
+            "marital_status" : "K",
+            "ptkp" : 30000000
+        },
+      "annual_tax_total" : 21350000,
+        "insurance": 1000000 
+    }
+   
+   
+]
