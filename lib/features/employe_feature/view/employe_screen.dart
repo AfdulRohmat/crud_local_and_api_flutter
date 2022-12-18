@@ -166,6 +166,33 @@ void showDetailInfo(EmployeModel employe, penghasilanNettoPerMonth,
           ),
           const SizedBox(height: 16),
 
+          employe.insurance != null
+              ? // STATUS PERNIKAHAN
+              Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Insurance",
+                      style: GoogleFonts.manrope(
+                        color: CrudCustomColors.blackMain,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      CurrencyFormat.convertToIdr(
+                          employe.insurance, 2, employe.country),
+                      style: GoogleFonts.manrope(
+                        color: CrudCustomColors.blackMain,
+                        fontSize: 14,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
+                    const SizedBox(height: 16)
+                  ],
+                )
+              : Container(),
+
           // BRUTO PER MONTH
           Text(
             "Gross income per month",
@@ -199,6 +226,27 @@ void showDetailInfo(EmployeModel employe, penghasilanNettoPerMonth,
           Text(
             CurrencyFormat.convertToIdr(
                 penghasilanNettoPerMonth, 2, employe.country),
+            style: GoogleFonts.manrope(
+              color: CrudCustomColors.blackMain,
+              fontSize: 14,
+              fontWeight: FontWeight.normal,
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // NETTO PER YEAR
+          Text(
+            "Net income per year",
+            style: GoogleFonts.manrope(
+              color: CrudCustomColors.blackMain,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+
+          Text(
+            CurrencyFormat.convertToIdr(
+                penghasilanNettoPerYear, 2, employe.country),
             style: GoogleFonts.manrope(
               color: CrudCustomColors.blackMain,
               fontSize: 14,
