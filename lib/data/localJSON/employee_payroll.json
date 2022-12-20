@@ -8,9 +8,8 @@
             "ptkp" : 75000000
         },
        "annual_tax_total" : 37750000,
-        "insurance": null 
-    },
-    
+       "insurance": null 
+    },  
     {
         "name" : "Nguyen Vatcong",
         "country" : "Vietnam",
@@ -20,8 +19,6 @@
             "ptkp" : 30000000
         },
       "annual_tax_total" : 21350000,
-        "insurance": 1000000 
+      "insurance": 1000000 
     }
-   
-   
 ]

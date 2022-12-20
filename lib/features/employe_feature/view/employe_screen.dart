@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:produc_crud_app/features/employe_feature/models/employee_model.dart';
@@ -139,6 +137,25 @@ void showDetailInfo(EmployeModel employe, penghasilanNettoPerMonth,
           ),
           Text(
             employe.name,
+            style: GoogleFonts.manrope(
+              color: CrudCustomColors.blackMain,
+              fontSize: 14,
+              fontWeight: FontWeight.normal,
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // COUNTRY
+          Text(
+            "Country",
+            style: GoogleFonts.manrope(
+              color: CrudCustomColors.blackMain,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Text(
+            employe.country,
             style: GoogleFonts.manrope(
               color: CrudCustomColors.blackMain,
               fontSize: 14,
